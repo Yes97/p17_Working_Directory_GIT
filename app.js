@@ -3,7 +3,9 @@ const app = express();
 const port = 3000;
 const customerFunction = require('./models/customer');
 
-app.get()
+app.post ('/', () => {
+    Customer.getCustomer();
+})
 
 
 app.listen(port, () => {
