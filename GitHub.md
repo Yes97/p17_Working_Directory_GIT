@@ -7,7 +7,7 @@ git clone <url-de-repositorio>  // recomendable para trabajar de manera colabora
 ## Actualizar un working directorio local desde un repositorio de Github (lo inverso al push)
 
 ```
-git pull <nombre-remoto> <rama>
+git pull <nombre-remoto> <rama> \\ Importante realizar el pull desde la rama que traemos
 
 ```
  En la mayoría de los casos será:
@@ -31,3 +31,10 @@ La operacion fetch lo que hace es traer el código de la rama especificada y eso
 
 Peticion de integracion de cambios en el codigo en un repositorio remoto 
 - deben estar en una rama distinta a la principal, dicho de otra manera, si cuando hacemos un push lo hacemos con una rama distinta a la principal, si esa rama no existe en el remoto se crea la pull request.
+
+- como la rama no existe cuando se realize la operacion push llevara esta opcion:
+```
+git push --set-upstream origin <rama>
+```
+
+
