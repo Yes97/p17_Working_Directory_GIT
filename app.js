@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const customerFunction = require('./models/customer');
 const cors = require('cors');
+const pedido = require('./models/pedidos');
 
 app.use(cors());
 
